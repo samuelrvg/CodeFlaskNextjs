@@ -15,7 +15,7 @@
 You can install CodeFlask via npm:
 
 ```
-npm install codeflask
+npm install codeflasknextjs
 ```
 
 Or use it directly in browser via cdn service:
@@ -27,20 +27,20 @@ https://unpkg.com/codeflask/build/codeflask.min.js
 ## Usage
 
 ```js
-import CodeFlask from 'codeflask';
+import CodeFlask from 'codeflasknextjs';
 
 const flask = new CodeFlask('#my-selector', { language: 'js' });
 ```
 You can also pass a DOM element instead of a selector:
 ```js
-import CodeFlask from 'codeflask';
+import CodeFlask from 'codeflasknextjs';
 
 const editorElem = document.getElementById('editor');
 const flask = new CodeFlask(editorElem, { language: 'js' });
 ```
 Usage with Shadow DOM:
 ```js
-import CodeFlask from 'codeflask';
+import CodeFlask from 'codeflasknextjs';
 ...
 const shadowElem = this.shadowRoot.querySelector('#editor');
 const flask = new CodeFlask(shadowElem, { language: 'js', styleParent: this.shadowRoot });
@@ -71,7 +71,7 @@ const code = flask.getCode();
 ### Enabling line numbers
 
 ```js
-import CodeFlask from 'codeflask';
+import CodeFlask from 'codeflasknextjs';
 
 const flask = new CodeFlask('#my-selector', {
   language: 'js',
@@ -82,7 +82,7 @@ const flask = new CodeFlask('#my-selector', {
 ### Enabling rtl (right to left writing)
 
 ```js
-import CodeFlask from 'codeflask';
+import CodeFlask from 'codeflasknextjs';
 
 const flask = new CodeFlask('#my-selector', {
   language: 'js',
@@ -93,7 +93,7 @@ const flask = new CodeFlask('#my-selector', {
 ### Enabling read only mode
 
 ```js
-import CodeFlask from 'codeflask';
+import CodeFlask from 'codeflasknextjs';
 
 const flask = new CodeFlask('#my-selector', {
   language: 'js',
@@ -111,7 +111,7 @@ flask.addLanguage('ruby', options)
 
 ```js
 import Prism from 'prismjs';
-import CodeFlask from 'codeflask';
+import CodeFlask from 'codeflasknextjs';
 
 const flask = new CodeFlask('#my-selector', {
   language: 'ruby',
@@ -137,7 +137,7 @@ By default, CodeFlask comes with a simple theme made from scratch called **[Code
 You can easily override this theme with your own by writting your own CSS and adding it to your project. If that's the case, you should also disable **CodeNoon** with the `defaultTheme` option:
 
 ```js
-import CodeFlask from 'codeflask';
+import CodeFlask from 'codeflasknextjs';
 
 const flask = new CodeFlask('#my-selector', {
   language: 'js',
