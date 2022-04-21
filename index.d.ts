@@ -3,7 +3,7 @@ import * as prism from 'prismjs';
 export as namespace codeflask
 
 export type LanguageDefinition = {
-  [token: string]: prism.LanguageDefinition | RegExp
+  [token: string]: prism.Languages | RegExp
 }
 
 export interface CodeFlaskOptions {
