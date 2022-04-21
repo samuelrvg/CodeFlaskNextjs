@@ -1,6 +1,6 @@
 {
-  "name": "codeflask",
-  "version": "1.4.1",
+  "name": "codeflasknextjs",
+  "version": "1.0.1",
   "description": "A micro code-editor for awesome web pages",
   "main": "build/codeflask.min.js",
   "module": "build/codeflask.module.js",
@@ -18,7 +18,7 @@
     "start": "serve public",
     "pretest": "npm run build",
     "test": "wdio test/wdio.conf.js",
-    "prepublishOnly": "npm install && npm run build"
+    "prepublishOnly": "npm install"
   },
   "dependencies": {
     "@types/prismjs": "^1.9.1",
@@ -44,18 +44,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kazzkiq/CodeFlask.git"
+    "url": "git+https://github.com/samuelrvg/CodeFlaskNextjs.git"
   },
   "keywords": [
     "code-editor",
     "code",
     "syntax-highlight",
-    "highlight"
+    "highlight",
+    "codeflask",
+    "nextjs"
   ],
-  "author": "Claudio Holanda",
+  "author": "Samuel Renan Gonçalves Vaz",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kazzkiq/CodeFlask/issues"
+    "url": "https://github.com/samuelrvg/CodeFlaskNextjs/issues"
   },
   "homepage": "https://kazzkiq.github.io/CodeFlask/"
 }
