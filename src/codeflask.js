@@ -37,7 +37,7 @@ export default class CodeFlask {
   }
 
   startEditor () {
-    const isCSSInjected = injectCss(editorCss, null, this.opts.styleParent)
+    const isCSSInjected = injectCss(this.opts.editorStyle || editorCss, null, this.opts.styleParent)
 
     if (!isCSSInjected) {
       throw Error('Failed to inject CodeFlask CSS.')
@@ -100,6 +100,7 @@ export default class CodeFlask {
     this.opts.areaId = this.opts.areaId || null
     this.opts.ariaLabelledby = this.opts.ariaLabelledby || null
     this.opts.readonly = this.opts.readonly || null
+    this.opts.editorStyle = this.opts.editorStyle || null
 
     // if handleTabs is not either true or false, make it true by default
     if (typeof this.opts.handleTabs !== 'boolean') {
