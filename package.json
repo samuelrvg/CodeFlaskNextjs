@@ -1,6 +1,6 @@
 {
   "name": "codeflasknextjs",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "A micro code-editor for awesome web pages",
   "main": "build/codeflask.min.js",
   "module": "build/codeflask.module.js",
